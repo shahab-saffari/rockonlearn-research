@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>RockOnLearn — برنامه‌ی ۱۰ روز کاری</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="plan.css">
+</head>
+<body>
+<header>
+  <a class="back" href="index.html">&#8594; بازگشت به Flow Map</a>
+  <h1>RockOnLearn — برنامه‌ی ۱۰ روز کاری</h1>
+  <p>نسخه ۲ · ۲ سپتامبر ۲۰۲۶ · هدف اصلی: افزایش درآمد · هدف دوم: شفاف‌تر و قابل‌استفاده‌تر کردن اپ روی iOS و اندروید</p>
+</header>
+<main class="plan">
+
+  <section class="plan-intro">
+    <h2>چرا این برنامه این شکلی است</h2>
+    <div class="finding-grid">
+      <div class="finding-card">
+        <div class="finding-num">۱</div>
+        <div class="finding-title">پرداخت خراب نیست — کاربر پشیمان می‌شود</div>
+        <div class="finding-body">از ۲۲۳ چک‌اوت شروع‌شده در ۳۰ روز، ۱۹۱ نفر (۸۶٪) کنسل کردند. زیرساخت سالم است؛ کاربر در لحظه‌ی دیدن قیمت جا می‌زند.</div>
+      </div>
+      <div class="finding-card">
+        <div class="finding-num">۲</div>
+        <div class="finding-title">جواب «چرا نمی‌خرند» از قبل جمع شده و خوانده نشده</div>
+        <div class="finding-body">exit survey با ۴۱۲ پاسخ در ماه: گران است ۳۵٪، سایر ۳۲٪، آماده نیستم ۲۴٪، اول می‌خواهم ببینم ۹٪.</div>
+      </div>
+      <div class="finding-card">
+        <div class="finding-num">۳</div>
+        <div class="finding-title">اپ خانه ندارد</div>
+        <div class="finding-body">هشت تب، پنج‌تای اول تقریباً مساوی. کاربر می‌گردد، جای خودش را پیدا نکرده.</div>
+      </div>
+      <div class="finding-card">
+        <div class="finding-num">۴</div>
+        <div class="finding-title">قلب محصول تقریباً لمس نمی‌شود</div>
+        <div class="finding-body"><code>mission_speak_started</code> هفته‌ای ۱ تا ۳ کاربر در برابر <code>coach_lesson_completed</code> با حدود ۱۹۶ کاربر.</div>
+      </div>
+    </div>
+    <p class="plan-note">یافته‌ی اضافه‌شده در نسخه ۲: از ۲٬۳۸۵ نفری که وارد قیف وب می‌شوند، فقط ۲۰۸ نفر (۸.۷٪) بعداً اپ را باز می‌کنند — بزرگ‌ترین نشت کل محصول. جزئیات کامل در <a href="#" id="open-source-doc">ROADMAP.md</a> پروژه.</p>
+  </section>
+
+  <section class="plan-principles">
+    <h2>سه اصل کل برنامه</h2>
+    <ol class="principle-list">
+      <li><strong>متریک موفقیت «تعداد خرید» نیست</strong> — متریک اصلی نرخ کنسل چک‌اوت است (الان ۸۶٪).</li>
+      <li><strong>دو موج شیپ می‌کنیم، نه یک‌جا</strong> — موج اول روز ۶، موج دوم روز ۹، با فاصله‌ی حداقل ۴۸ ساعت.</li>
+      <li><strong>هیچ تغییری قبل از درست بودن رویدادش شیپ نمی‌شود.</strong></li>
+    </ol>
+  </section>
+
+  <section class="plan-roadmap">
+    <h2>روادمپ ۱۰ روزه</h2>
+    <div class="roadmap-track">
+
+      <div class="roadmap-day" data-decision="locked">
+        <div class="roadmap-day-num">۱</div>
+        <div class="roadmap-day-title">تفکیک جغرافیایی و متن آزاد</div>
+        <div class="roadmap-day-sub">تحلیل کشور × قیمت + شیپ فیلد متن آزاد</div>
+      </div>
+      <div class="roadmap-arrow">&#8592;</div>
+
+      <div class="roadmap-day" data-decision="locked">
+        <div class="roadmap-day-num">۲</div>
+        <div class="roadmap-day-title">تجربه‌ی دست‌اول و IA</div>
+        <div class="roadmap-day-sub">نصب تازه، ضبط، جدول معماری اطلاعات</div>
+      </div>
+      <div class="roadmap-arrow">&#8592;</div>
+
+      <div class="roadmap-day" data-decision="mixed">
+        <div class="roadmap-day-num">۳</div>
+        <div class="roadmap-day-title">پیشنهاد معماری قیمت‌گذاری</div>
+        <div class="roadmap-day-sub">بومی‌سازی، پلن پیش‌فرض، تریال، شفافیت</div>
+      </div>
+      <div class="roadmap-arrow">&#8592;</div>
+
+      <div class="roadmap-day" data-decision="locked">
+        <div class="roadmap-day-num">۴</div>
+        <div class="roadmap-day-title">تشریح رقبا</div>
+        <div class="roadmap-day-sub">قیمت رقبا در بازارهای هدف + تم‌بندی ریویو</div>
+      </div>
+      <div class="roadmap-arrow">&#8592;</div>
+
+      <div class="roadmap-day" data-decision="locked">
+        <div class="roadmap-day-num">۵</div>
+        <div class="roadmap-day-title">طراحی موج اول</div>
+        <div class="roadmap-day-sub">ویوپورت اول پی‌وال، شخصی‌سازی، شفافیت قیمت</div>
+      </div>
+      <div class="roadmap-arrow">&#8592;</div>
+
+      <div class="roadmap-day roadmap-day--ship" data-decision="locked">
+        <div class="roadmap-day-num">۶</div>
+        <div class="roadmap-day-title">شیپ موج اول</div>
+        <div class="roadmap-day-sub">انتشار + ثبت خط پایه</div>
+      </div>
+      <div class="roadmap-arrow">&#8592;</div>
+
+      <div class="roadmap-day" data-decision="mixed">
+        <div class="roadmap-day-num">۷</div>
+        <div class="roadmap-day-title">طراحی خانه‌ی محصول</div>
+        <div class="roadmap-day-sub">تب خانه، ادغام تب‌ها، شکاف فعال‌سازی</div>
+      </div>
+      <div class="roadmap-arrow">&#8592;</div>
+
+      <div class="roadmap-day" data-decision="mixed">
+        <div class="roadmap-day-num">۸</div>
+        <div class="roadmap-day-title">خواندن نتایج و موج دوم</div>
+        <div class="roadmap-day-sub">تحلیل موج اول + طراحی موج دوم</div>
+      </div>
+      <div class="roadmap-arrow">&#8592;</div>
+
+      <div class="roadmap-day roadmap-day--ship" data-decision="locked">
+        <div class="roadmap-day-num">۹</div>
+        <div class="roadmap-day-title">شیپ موج دوم + آدیت اندروید</div>
+        <div class="roadmap-day-sub">انتشار موج دوم + آدیت پریتی</div>
+      </div>
+      <div class="roadmap-arrow">&#8592;</div>
+
+      <div class="roadmap-day" data-decision="locked">
+        <div class="roadmap-day-num">۱۰</div>
+        <div class="roadmap-day-title">ارائه و بک‌لاگ</div>
+        <div class="roadmap-day-sub">قبل/بعد، بک‌لاگ فاز بعد، ارائه</div>
+      </div>
+
+    </div>
+    <div class="roadmap-legend">
+      <span><i class="dot dot--locked"></i> تصمیم قطعی</span>
+      <span><i class="dot dot--mixed"></i> بخشی نیاز به تصمیم تو دارد</span>
+      <span><i class="dot dot--ship"></i> روز شیپ</span>
+    </div>
+  </section>
+
+  <section class="plan-days">
+    <h2>جزئیات روز به روز</h2>
+
+    <div class="day-accordion" id="days">
+
+      <details class="day" open>
+        <summary>
+          <span class="day-badge">۱</span>
+          <span class="day-summary-title">تفکیک جغرافیایی و راه‌اندازی متن آزاد</span>
+          <span class="day-status day-status--locked">قطعی</span>
+        </summary>
+        <div class="day-body">
+          <p class="day-goal"><strong>هدف:</strong> فهمیدن اینکه کاربر واقعی ما کجاست و قیمت فعلی نسبت به قدرت خرید او چقدر است.</p>
+
+          <div class="day-block">
+            <h4>کار تو</h4>
+            <ol>
+              <li>در Amplitude، کاربران فعال ۳۰ روز گذشته را بر حسب <code>country</code> تفکیک کن.</li>
+              <li>همان تفکیک را روی <code>paywall_checkout_started</code> و <code>Checkout Cancelled</code> انجام بده. سؤال: آیا نرخ کنسل در کشورهای با درآمد پایین‌تر بیشتر است؟</li>
+              <li>در RevenueCat، درآمد واقعی ۳۰ روز گذشته را به تفکیک کشور و پلن بردار.</li>
+              <li>عدد RevenueCat را با Amplitude مقایسه کن. اگر اختلاف زیاد بود، رویداد خرید ناقص است و باید قبل از هر کاری درست شود.</li>
+              <li>قیمت فعلی (۹۹ دلار سالانه) را در برابر متوسط درآمد ماهانه در سه کشور اول بگذار.</li>
+              <li><strong>[نسخه ۲]</strong> صحت‌سنجی رویداد «Chat viewed» — بررسی کن خودکار روی لود صفحه می‌زند یا فقط با تعامل واقعی کاربر. یک ساعت کار، تعیین می‌کند افت ۴۱.۷٪ واقعی است یا مصنوعی.</li>
+              <li><strong>[نسخه ۲]</strong> تفکیک ورودی وب در برابر اپ — چند درصد از قیف وب می‌آید و چند درصد مستقیم اپ را نصب می‌کند؟</li>
+            </ol>
+          </div>
+
+          <div class="day-block">
+            <h4>کار دولوپر</h4>
+            <ul>
+              <li>افزودن فیلد متن آزاد اختیاری به گزینه‌ی «سایر» در exit survey پی‌وال. رویداد: <code>paywall_exit_survey_completed</code> با پراپرتی جدید <code>exit_reason_text</code>. باید امروز شیپ شود تا تا روز ۷ داده جمع شده باشد.</li>
+              <li><strong>[نسخه ۲]</strong> ثبت کد خطای پرداخت و علت کنسل شدن چک‌اوت — تفکیک «اعتراض به قیمت»، «منصرف شدن» و «خطای فنی».</li>
+            </ul>
+          </div>
+
+          <div class="day-block day-block--output">
+            <h4>خروجی</h4>
+            <ul>
+              <li>جدول: کشور × کاربر × نرخ کنسل چک‌اوت × درآمد</li>
+              <li>تأیید یا رد فرضیه‌ی «کنسل شدن ناشی از قیمت نامتناسب با بازار است»</li>
+              <li>فیلد متن آزاد فعال روی پروداکشن</li>
+            </ul>
+          </div>
+
+          <p class="day-decision-note">فیلد متن آزاد بدون بحث باید شیپ شود؛ ۳۲٪ از پاسخ‌ها الان بی‌استفاده هستند. تفکیک جغرافیایی هم پیش‌نیاز همه‌چیز است.</p>
+        </div>
+      </details>
+
+      <details class="day">
+        <summary>
+          <span class="day-badge">۲</span>
+          <span class="day-summary-title">تجربه‌ی دست‌اول و نقشه‌ی معماری اطلاعات</span>
+          <span class="day-status day-status--locked">قطعی</span>
+        </summary>
+        <div class="day-body">
+          <p class="day-goal"><strong>هدف:</strong> تبدیل گیج شدن شخصی به شواهد قابل ارائه، و مستند کردن هم‌پوشانی تب‌ها.</p>
+
+          <div class="day-block">
+            <h4>کار تو</h4>
+            <ol>
+              <li>یک نصب کاملاً تازه روی iOS و یکی روی اندروید. از لحظه‌ی زدن آیکون تا ۱۰ دقیقه بعد ضبط ویدیو کن و با صدای بلند فکر کن.</li>
+              <li>هر جا مکث کردی یا ندانستی قدم بعدی چیست، همان لحظه یادداشت کن با زمان دقیق. مثال: «ثانیه ۴۰ — وارد Explore شدم، نفهمیدم اول کدام ردیف را بزنم.»</li>
+              <li>جدول IA بساز: تب / قرار است چه کاری بکند / عملاً چه چیزی داخلش هست / با کدام تب‌ها هم‌پوشانی دارد / کاربر ۳۰ روز.</li>
+              <li>از دو یا سه نفر از تیم بپرس هر تب برای چیست. اگر جواب‌ها فرق داشت، همان خودش یافته است.</li>
+            </ol>
+          </div>
+
+          <div class="day-block">
+            <h4>کار دولوپر</h4>
+            <ul>
+              <li>کاری ندارد. اگر ظرفیت آزاد است، می‌تواند روی پاک‌سازی تاکسونومی (روز ۳) جلو بیفتد.</li>
+            </ul>
+          </div>
+
+          <div class="day-block day-block--output">
+            <h4>خروجی</h4>
+            <ul>
+              <li>دو ویدیوی نصب تازه + یادداشت‌های زمان‌دار</li>
+              <li>جدول IA پرشده</li>
+              <li>لیست تب‌هایی که ادعای یکسان دارند</li>
+            </ul>
+          </div>
+
+          <p class="day-decision-note">بدون تجربه‌ی دست‌اول، هر توصیه‌ی UX حدس است. ۹۰ ثانیه از این ویدیو در جلسه‌ی روز ۱۰ قانع‌کننده‌تر از هر اسلایدی خواهد بود.</p>
+        </div>
+      </details>
+
+      <details class="day">
+        <summary>
+          <span class="day-badge">۳</span>
+          <span class="day-summary-title">پیشنهاد معماری قیمت‌گذاری</span>
+          <span class="day-status day-status--mixed">با توست</span>
+        </summary>
+        <div class="day-body">
+          <p class="day-goal"><strong>هدف:</strong> طراحی ساختار قیمتی که با شواهد روز ۱ سازگار باشد.</p>
+
+          <div class="day-block">
+            <h4>کار تو — چهار تصمیم قیمت‌گذاری به‌صورت پیشنهاد مکتوب</h4>
+            <ol>
+              <li><strong>بومی‌سازی قیمت.</strong> برای کشورهایی که سهم کاربر بالایی دارند ولی خرید صفر است، قیمت متناسب با بازار تعریف کن. کاملاً در App Store Connect و Play Console انجام می‌شود؛ نیازی به ریلیز اپ ندارد.</li>
+              <li><strong>پلن پیش‌فرض.</strong> ساختار فعلی (۲ دلار معرفی ماهانه کنار ۹۹ دلار سالانه) لنگر ذهنی را روی ۲ دلار می‌گذارد. پیشنهاد: سالانه پیش‌فرض باشد با نمایش معادل هفتگی.</li>
+              <li><strong>تریال به‌جای قیمت معرفی.</strong> تریال رایگان معمولاً بهتر عمل می‌کند چون تصمیم پرداخت را از لحظه‌ی اول جدا می‌کند.</li>
+              <li><strong>شفافیت قبل از صفحه‌ی پرداخت.</strong> عدد نهایی با ارز محلی باید قبل از باز شدن صفحه‌ی نیتیو کاملاً واضح باشد.</li>
+            </ol>
+          </div>
+
+          <div class="day-block">
+            <h4>کار دولوپر</h4>
+            <ul>
+              <li>تأیید فنی: آیا تغییر قیمت‌ها فقط از کنسول ممکن است یا محصولات جدید در RevenueCat لازم است؟</li>
+              <li>انتخاب رویدادهای canonical برای پی‌وال و خرید، و مستند کردنشان. بقیه به‌عنوان deprecated علامت بخورند.</li>
+            </ul>
+          </div>
+
+          <div class="day-block day-block--output">
+            <h4>خروجی</h4>
+            <ul>
+              <li>سند پیشنهاد قیمت‌گذاری با عدد مشخص برای هر بازار</li>
+              <li>لیست رویدادهای canonical (یک نام برای هر مفهوم)</li>
+            </ul>
+          </div>
+
+          <p class="day-decision-note"><strong>با توست:</strong> بومی‌سازی قیمت قطعی توصیه می‌شود، ولی کدام کشورها و چه عددی به دیتای روز ۱ بستگی دارد. تریال در برابر قیمت معرفی یک تصمیم تجاری است — با ذی‌نفع تجاری تصمیم بگیر، نه خودت.</p>
+        </div>
+      </details>
+
+      <details class="day">
+        <summary>
+          <span class="day-badge">۴</span>
+          <span class="day-summary-title">تشریح رقبا در همان بازارها</span>
+          <span class="day-status day-status--locked">قطعی</span>
+        </summary>
+        <div class="day-body">
+          <p class="day-goal"><strong>هدف:</strong> فهمیدن اینکه کاربر ما با چه قیمتی و چه ساختاری مقایسه می‌کند.</p>
+
+          <div class="day-block">
+            <h4>کار تو</h4>
+            <ol>
+              <li>پی‌وال و ساختار قیمت این‌ها را اسکرین‌شات بگیر: Duolingo، Speak، ELSA، Praktika، Cambly.</li>
+              <li>مهم: قیمت‌ها را در همان کشورهایی که کاربر داری ببین، نه قیمت آمریکا. اگر VPN لازم است، استفاده کن.</li>
+              <li>ببین هر کدام قبل از درخواست پول چه مقدار ارزش نشان می‌دهند.</li>
+              <li>۲۰۰ ریویوی اخیر استور (هر دو پلتفرم) را تم‌بندی کن، با تمرکز روی ۱ و ۲ ستاره‌ها و کلمات مربوط به قیمت، کنسل، و گیج شدن.</li>
+            </ol>
+          </div>
+
+          <div class="day-block">
+            <h4>کار دولوپر</h4>
+            <ul><li>کاری ندارد.</li></ul>
+          </div>
+
+          <div class="day-block day-block--output">
+            <h4>خروجی</h4>
+            <ul>
+              <li>جدول مقایسه‌ی قیمت و ساختار پلن رقبا در بازارهای هدف</li>
+              <li>تم‌بندی ریویوها</li>
+            </ul>
+          </div>
+
+          <p class="day-decision-note">قطعی که انجام شود. عمق کار به تو بستگی دارد — اگر وقت کم آمد، فقط دو رقیب نزدیک کافی است.</p>
+        </div>
+      </details>
+
+      <details class="day">
+        <summary>
+          <span class="day-badge">۵</span>
+          <span class="day-summary-title">طراحی موج اول</span>
+          <span class="day-status day-status--locked">قطعی</span>
+        </summary>
+        <div class="day-body">
+          <p class="day-goal"><strong>هدف:</strong> آماده کردن اسپک قابل شیپ برای تغییراتی که مستقیماً به نرخ کنسل چک‌اوت می‌خورند.</p>
+
+          <div class="day-block">
+            <h4>کار تو — سه آیتم</h4>
+            <ol>
+              <li><strong>ویوپورت اول پی‌وال.</strong> مشکل ۱۰ اسکرین بودن نیست؛ مشکل این است که معامله در نگاه اول معلوم نیست. اسکرین اول باید فقط این چهار چیز را داشته باشد: پلن پیش‌فرض انتخاب‌شده، قیمت با ارز محلی (کل + معادل هفتگی)، یک اثبات (امتیاز یا تعداد کاربر)، یک دکمه‌ی اصلی. بقیه‌ی محتوا پایین‌تر می‌ماند.</li>
+              <li><strong>انعکاس جواب‌های کاربر در پی‌وال.</strong> کاربر در آنبردینگ هدف، سطح و مانعش را گفته، ولی پی‌وال هیچ‌کدام را برنمی‌گرداند. پی‌وال باید با جمله‌ی خود کاربر شروع شود: هدفش، سطحش، و اینکه این پلن چطور آن مانع را حل می‌کند.</li>
+              <li><strong>شفافیت قیمت قبل از صفحه‌ی نیتیو.</strong> مستقیماً به آن ۸۶٪ حمله می‌کند.</li>
+            </ol>
+          </div>
+
+          <div class="day-block">
+            <h4>کار دولوپر</h4>
+            <ul>
+              <li>بررسی فنی اسپک و تخمین. تخمین را از خودشان بگیر، نه اینکه خودت بزنی.</li>
+              <li>اطمینان از اینکه رویدادهای canonical روز ۳ روی نسخه‌ی جدید درست ثبت می‌شوند.</li>
+            </ul>
+          </div>
+
+          <div class="day-block day-block--output">
+            <h4>خروجی</h4>
+            <ul>
+              <li>اسپک موج اول با کپی نهایی، برای iOS و اندروید</li>
+              <li>تخمین مهندسی</li>
+            </ul>
+          </div>
+
+          <p class="day-decision-note">قطعی برای هر سه آیتم. هر سه مستقیماً به بزرگ‌ترین نشتی قیف می‌خورند و ریسک پایینی دارند.</p>
+        </div>
+      </details>
+
+      <details class="day">
+        <summary>
+          <span class="day-badge">۶</span>
+          <span class="day-summary-title">شیپ موج اول</span>
+          <span class="day-status day-status--ship">روز شیپ · قطعی</span>
+        </summary>
+        <div class="day-body">
+          <div class="day-block">
+            <h4>کار تو</h4>
+            <ul>
+              <li>بررسی نهایی روی هر دو پلتفرم قبل از انتشار</li>
+              <li>ثبت خط پایه‌ی دقیق: نرخ کنسل چک‌اوت، نرخ پی‌وال به چک‌اوت، توزیع دلایل exit survey، همه با تاریخ مشخص. بدون این عدد، در روز ۱۰ چیزی برای مقایسه نداری.</li>
+              <li>اعمال قیمت‌های محلی در App Store Connect و Play Console</li>
+            </ul>
+          </div>
+
+          <div class="day-block">
+            <h4>کار دولوپر</h4>
+            <ul><li>انتشار موج اول.</li></ul>
+          </div>
+
+          <div class="day-block day-block--output">
+            <h4>خروجی</h4>
+            <ul><li>موج اول روی پروداکشن + سند خط پایه</li></ul>
+          </div>
+
+          <p class="day-decision-note">قطعی. نکته: اگر فریم‌ورک آزمایش پی‌وال اجازه می‌دهد، موج اول را روی ۵۰٪ کاربران بده تا مقایسه‌ی هم‌زمان داشته باشی. اگر حجم کم بود، روی ۱۰۰٪ بده و قبل/بعد را مقایسه کن.</p>
+        </div>
+      </details>
+
+      <details class="day">
+        <summary>
+          <span class="day-badge">۷</span>
+          <span class="day-summary-title">طراحی خانه‌ی محصول</span>
+          <span class="day-status day-status--mixed">با توست</span>
+        </summary>
+        <div class="day-body">
+          <p class="day-goal"><strong>هدف:</strong> حل مشکلی که خودت با آن مواجه شدی و دیتا هم تأییدش کرد.</p>
+
+          <div class="day-block">
+            <h4>کار تو</h4>
+            <ol>
+              <li><strong>یک تب را به‌عنوان خانه انتخاب کن.</strong> بعد از لاگین، کاربر باید در جایی فرود بیاید که یک قدم بعدی صریح دارد. <code>today</code> منطقی‌ترین گزینه است چون از قبل مفهوم «برنامه‌ی امروز» را دارد.</li>
+              <li><strong>تب‌ها را ادغام کن.</strong> هشت تب زیاد است. <code>feed</code>، <code>clips</code> و <code>channels</code> روی هم ۱۱ کاربر در ماه دارند. هدف: رسیدن به سه یا چهار تب.</li>
+              <li><strong>مسیر رسیدن به قلب محصول را کوتاه کن.</strong> باید مشخص شود از خانه‌ی جدید تا اولین مکالمه‌ی صوتی چند تپ فاصله است و آن عدد کم شود.</li>
+              <li><strong>تور ۱۳ مرحله‌ای را حذف کن.</strong> آن تور علامت است نه درمان. جایگزین: راهنمای درجا در لحظه‌ی نیاز.</li>
+            </ol>
+          </div>
+
+          <div class="day-block">
+            <h4>کار تو — [نسخه ۲] اسکوپ گسترش‌یافته: شکاف فعال‌سازی</h4>
+            <p>طراحی «خانه‌ی محصول» حالا باید لحظه‌ی گذار از وب به اپ را هم پوشش دهد، چون بزرگ‌ترین نشت محصول همان‌جاست (۸.۷٪ فعال‌سازی).</p>
+            <ol>
+              <li>بعد از تمام شدن پرسشنامه‌ی وب، لینک دانلود اپ چقدر واضح است؟</li>
+              <li>آیا کاربر بعد از نصب اپ، دوباره مجبور است همه‌چیز را از اول پر کند؟</li>
+              <li>آیا پاسخ‌های وب به اکانت اپ منتقل می‌شوند؟ (رویدادهای <code>funnel_onboarding_session_attach_failed</code> و <code>funnel_preferences_client_backfill_skipped</code> نشان می‌دهند این انتقال گاهی شکست می‌خورد.)</li>
+            </ol>
+          </div>
+
+          <div class="day-block">
+            <h4>کار دولوپر</h4>
+            <ul><li>تخمین کار ادغام تب‌ها و تغییر صفحه‌ی فرود.</li></ul>
+          </div>
+
+          <div class="day-block day-block--output">
+            <h4>خروجی</h4>
+            <ul><li>اسپک IA جدید با ساختار تب‌های پیشنهادی و صفحه‌ی فرود بعد از لاگین</li></ul>
+          </div>
+
+          <p class="day-decision-note">با توست، ولی خیلی جدی توصیه می‌شود. اینکه IA باید ساده شود قطعی است. اینکه کدام تب‌ها ادغام شوند و کدام خانه باشد، تصمیم توست. ریسک: تغییر IA برای کاربران فعلی هزینه‌ی یادگیری دارد — اگر تیم محافظه‌کار است، می‌توان فقط صفحه‌ی فرود را عوض کرد و ادغام تب‌ها را به فاز بعد سپرد.</p>
+        </div>
+      </details>
+
+      <details class="day">
+        <summary>
+          <span class="day-badge">۸</span>
+          <span class="day-summary-title">خواندن نتایج و طراحی موج دوم</span>
+          <span class="day-status day-status--mixed">با توست</span>
+        </summary>
+        <div class="day-body">
+          <div class="day-block">
+            <h4>کار تو</h4>
+            <ol>
+              <li>موج اول را بخوان. سؤال اصلی: نرخ کنسل چک‌اوت پایین آمد؟ به تعداد خرید نگاه نکن، حجمش برای نتیجه‌گیری کافی نیست.</li>
+              <li>متن‌های آزاد exit survey را که از روز ۱ جمع شده بخوان. اولین دیتای کیفی واقعی درباره‌ی آن ۳۲٪.</li>
+              <li>بر اساس آنچه یاد گرفتی، محتوای موج دوم را نهایی کن.</li>
+            </ol>
+          </div>
+
+          <div class="day-block">
+            <h4>کاندیداهای موج دوم</h4>
+            <ul>
+              <li>صفحه‌ی فرود جدید بعد از لاگین</li>
+              <li>عقب انداختن لاگین و ریماندر تا بعد از اولین تجربه‌ی ارزشمند</li>
+              <li>کوتاه کردن مسیر تا اولین مکالمه‌ی صوتی</li>
+              <li>تنظیم دقیق قیمت بر اساس واکنش موج اول</li>
+            </ul>
+          </div>
+
+          <div class="day-block">
+            <h4>کار دولوپر</h4>
+            <ul><li>آماده‌سازی موج دوم.</li></ul>
+          </div>
+
+          <div class="day-block day-block--output">
+            <h4>خروجی</h4>
+            <ul><li>گزارش نتایج موج اول + اسپک موج دوم</li></ul>
+          </div>
+
+          <p class="day-decision-note">با توست. محتوای موج دوم کاملاً به نتیجه‌ی موج اول بستگی دارد و الان قابل قفل کردن نیست. اگر موج اول اثر روشنی داشت، همان مسیر را عمیق‌تر کن؛ اگر نداشت، سراغ IA برو.</p>
+        </div>
+      </details>
+
+      <details class="day">
+        <summary>
+          <span class="day-badge">۹</span>
+          <span class="day-summary-title">شیپ موج دوم و آدیت پریتی اندروید</span>
+          <span class="day-status day-status--ship">روز شیپ · قطعی</span>
+        </summary>
+        <div class="day-body">
+          <div class="day-block">
+            <h4>کار تو</h4>
+            <ul>
+              <li>بررسی موج دوم قبل از انتشار</li>
+              <li>آدیت پریتی اندروید، فقط روی همان مسیری که تغییر داده‌ایم — نه کل اپ. چک‌لیست: رفتار دکمه‌ی بک، بریدگی متن، safe area، فلوی خرید Play، رندر قیمت با ارز محلی.</li>
+            </ul>
+            <p>دلیل اینکه این کار الان می‌آید و نه زودتر: اندروید حدود دو برابر iOS کاربر دارد (~۴۵۰ در برابر ~۲۲۰ هفتگی). اگر سهم درآمد اندروید نامتناسب پایین باشد، همین خودش بزرگ‌ترین یافته‌ی درآمدی است.</p>
+          </div>
+
+          <div class="day-block">
+            <h4>کار دولوپر</h4>
+            <ul><li>انتشار موج دوم + رفع مشکلات پریتی که پیدا می‌شود.</li></ul>
+          </div>
+
+          <div class="day-block day-block--output">
+            <h4>خروجی</h4>
+            <ul><li>موج دوم روی پروداکشن + لیست مشکلات پریتی با اولویت</li></ul>
+          </div>
+
+          <p class="day-decision-note">قطعی برای آدیت. رفع کردن یا نکردن هر مورد به شدت آن بستگی دارد.</p>
+        </div>
+      </details>
+
+      <details class="day">
+        <summary>
+          <span class="day-badge">۱۰</span>
+          <span class="day-summary-title">ارائه و بک‌لاگ فاز بعد</span>
+          <span class="day-status day-status--locked">قطعی</span>
+        </summary>
+        <div class="day-body">
+          <div class="day-block">
+            <h4>کار تو</h4>
+            <ol>
+              <li><strong>سند قبل/بعد.</strong> خط پایه‌ی روز ۶ کنار عدد امروز. صادق باش — اگر چیزی اثر نداشت، همان را بگو. اعتبار تو برای فاز بعد از این می‌آید.</li>
+              <li><strong>بک‌لاگ فاز بعد، با سایز دلاری.</strong> برای هر آیتم: متریک فعلی، دلتای واقع‌بینانه، اثر تخمینی ماهانه بر درآمد، تخمین مهندسی.</li>
+              <li><strong>سند تاکسونومی رویدادها.</strong> لیست canonical که در روز ۳ درست شد، به‌صورت مکتوب.</li>
+              <li><strong>ارائه.</strong> ساختار پیشنهادی: ۹۰ ثانیه ویدیوی نصب تازه (روز ۲) → چهار یافته‌ی بخش ۰ → چه چیزی شیپ شد و چه اثری داشت → سه اولویت بعدی با عدد دلاری.</li>
+            </ol>
+          </div>
+
+          <div class="day-block day-block--output">
+            <h4>خروجی</h4>
+            <ul><li>سه سند بالا + جلسه‌ی ارائه</li></ul>
+          </div>
+
+          <p class="day-decision-note">قطعی. نکته‌ی مهم: ارائه‌ی روز ۱۰ نباید رونمایی باشد. از روز ۴ به بعد یافته‌ها را با ذی‌نفع‌ها در میان بگذار تا جلسه‌ی آخر فقط تأیید باشد.</p>
+        </div>
+      </details>
+
+    </div>
+  </section>
+
+  <section class="plan-skip">
+    <h2>چه کارهایی را عمداً انجام نمی‌دهیم</h2>
+    <ul class="skip-list">
+      <li><strong>رکروت کردن کاربر برای تست یوزبیلیتی.</strong> دیتای کیفی از قبل وجود دارد (۴۱۲ نفر exit survey، ۱۹۱ نفر کنسل چک‌اوت) و خوانده نشده.</li>
+      <li><strong>ریدیزاین کلی.</strong> در دو هفته تمام نمی‌شود و شیپ نمی‌شود.</li>
+      <li><strong>تست A/B با انتظار معناداری آماری روی خرید.</strong> حجم کافی نیست.</li>
+      <li><strong>پاک‌سازی کامل تاکسونومی.</strong> فقط رویدادهای canonical مسیر پول را مستند می‌کنیم.</li>
+      <li><strong>آدیت پریتی کل اپ.</strong> فقط مسیری که تغییر داده‌ایم.</li>
+    </ul>
+  </section>
+
+  <section class="plan-decisions">
+    <h2>خلاصه‌ی تصمیم‌ها</h2>
+    <div class="decision-cols">
+      <div class="decision-col">
+        <h4>قطعی، بدون نیاز به تصمیم تو</h4>
+        <ul>
+          <li>فیلد متن آزاد در exit survey (روز ۱)</li>
+          <li>تفکیک جغرافیایی و تطبیق با RevenueCat (روز ۱)</li>
+          <li>ضبط نصب تازه و جدول IA (روز ۲)</li>
+          <li>انتخاب رویدادهای canonical (روز ۳)</li>
+          <li>بازطراحی ویوپورت اول پی‌وال (روز ۵)</li>
+          <li>انعکاس جواب‌های آنبردینگ در پی‌وال (روز ۵)</li>
+          <li>شفافیت قیمت قبل از صفحه‌ی نیتیو (روز ۵)</li>
+          <li>ثبت خط پایه (روز ۶)</li>
+          <li>آدیت پریتی اندروید روی مسیر تغییریافته (روز ۹)</li>
+          <li>سه سند نهایی (روز ۱۰)</li>
+        </ul>
+      </div>
+      <div class="decision-col">
+        <h4>نیاز به تصمیم تو دارد</h4>
+        <ul>
+          <li>کدام کشورها بومی‌سازی قیمت شوند و با چه عددی (روز ۳)</li>
+          <li>تریال یا قیمت معرفی — با ذی‌نفع تجاری تصمیم بگیر (روز ۳)</li>
+          <li>عمق تشریح رقبا (روز ۴)</li>
+          <li>کدام تب‌ها ادغام شوند و کدام خانه باشد (روز ۷)</li>
+          <li>محتوای موج دوم (روز ۸)</li>
+          <li>درصد رول‌اوت موج اول: ۵۰٪ یا ۱۰۰٪ (روز ۶)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="plan-events">
+    <h2>پیوست — رویدادهای کلیدی</h2>
+    <div class="table-wrap">
+      <table class="events-table">
+        <thead>
+          <tr>
+            <th>مفهوم</th>
+            <th>رویداد canonical</th>
+            <th>نام‌های موازی (deprecated)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>دیدن پی‌وال</td>
+            <td><code>paywall_viewed</code></td>
+            <td><code>Paywall Viewed</code>، <code>funnel_paywall_viewed</code>، <code>onboarding_paywall_viewed</code>، <code>paywall_offer_viewed</code>، <code>Offer Viewed</code></td>
+          </tr>
+          <tr>
+            <td>شروع چک‌اوت</td>
+            <td><code>paywall_checkout_started</code></td>
+            <td><code>Checkout Started</code>، <code>checkout_started</code></td>
+          </tr>
+          <tr>
+            <td>کنسل چک‌اوت</td>
+            <td><code>Checkout Cancelled</code></td>
+            <td><code>paywall_checkout_cancelled</code>، <code>checkout_cancelled</code></td>
+          </tr>
+          <tr>
+            <td>خرید</td>
+            <td><code>rc_initial_purchase_event</code> (منبع حقیقت)</td>
+            <td><code>Subscription Started</code>، <code>subscription_started</code>، <code>paywall_subscription_started</code>، <code>paywall_purchase_completed</code>، <code>purchase</code></td>
+          </tr>
+          <tr>
+            <td>ناوبری</td>
+            <td><code>bottom_nav_clicked</code> با <code>tab_key</code></td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>نظرسنجی خروج</td>
+            <td><code>paywall_exit_survey_completed</code> با <code>exit_reason</code></td>
+            <td><code>Exit Survey Completed</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="plan-note">انتخاب نهایی canonical باید با تیم فنی تأیید شود. مقدار <code>paywall_source</code> سه حالت دارد: <code>funnel_paywall</code>، <code>subscription_paywall</code>، <code>trial_expired</code> — نشان‌دهنده‌ی قیف وب جدا از اپ.</p>
+  </section>
+
+</main>
+<script>
+document.getElementById('open-source-doc').addEventListener('click', function(e){
+  e.preventDefault();
+  alert('سند کامل: ROADMAP.md در ریشه‌ی ریپوی پروژه');
+});
+</script>
+</body>
+</html>
