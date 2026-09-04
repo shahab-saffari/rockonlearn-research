@@ -119,16 +119,32 @@
   </section>
 
   <section class="stage-section">
+    <h2>درآمد RevenueCat در برابر رویداد خرید Amplitude</h2>
+    <p>این را مستقیماً از طریق MCP روی Amplitude کوئری زدم، نه از RevenueCat مستقیم — چون رویداد canonical خرید (<code>rc_initial_purchase_event</code>) که در ROADMAP.md به‌عنوان منبع حقیقت مشخص شده، از طریق وب‌هوک RevenueCat وارد Amplitude می‌شود. عدد این رویداد باید معادل عدد داشبورد RevenueCat باشد.</p>
+    <div class="stage-table-wrap">
+      <table class="stage-table">
+        <thead>
+          <tr><th>رویداد</th><th>تعداد خرید (۳۰ روز)</th><th>مجموع درآمد</th><th>محدوده‌ی قیمت هر تراکنش</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>rc_initial_purchase_event</code> (منبع حقیقت)</td><td>۵</td><td>۱۰.۶۵ دلار</td><td>۱.۹۹ تا ۲.۳۳ دلار</td></tr>
+          <tr><td><code>purchase</code> (رویداد Amplitude)</td><td>۱۰ (۹ بدون آوت‌لایر)</td><td>۹٬۱۸۷.۹ دلار (۱۹۷.۹ دلار بدون آوت‌لایر)</td><td>۱۴.۹۹ تا ۳۹.۹۹ دلار + یک مورد ۸٬۹۹۰ دلاری</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="stage-callout">
+      <h4>یافته — رویداد خرید ناقص و ناسازگار است</h4>
+      <p>عدد <code>rc_initial_purchase_event</code> (۵ خرید) دقیقاً با عددی که در ROADMAP.md به‌عنوان تأیید RevenueCat ثبت شده بود مطابقت دارد، پس این رویداد قابل اتکاست. اما رویداد <code>purchase</code> — که یک رویداد جدا و احتمالاً client-side است — تقریباً دو برابر تعداد و ده‌ها برابر مبلغ نشان می‌دهد، و شامل یک تراکنش ۸٬۹۹۰ دلاری است که برای یک اشتراک ماهانه به‌وضوح داده‌ی خراب است (به‌احتمال زیاد خطای واحد پول یا لاگ اشتباه در سمت کلاینت). حتی بعد از حذف آن آوت‌لایر، مجموع <code>purchase</code> (۱۹۷.۹ دلار) همچنان تقریباً ۱۹ برابر <code>rc_initial_purchase_event</code> است.</p>
+      <p><strong>نتیجه:</strong> رویداد <code>purchase</code> را نباید برای تحلیل درآمد استفاده کرد؛ فقط <code>rc_initial_purchase_event</code> قابل اتکاست. این خودش تأیید می‌کند که پاک‌سازی تاکسونومی و مشخص کردن رویدادهای canonical (مرحله‌ی ۳) قبل از هر تحلیل درآمدی دیگری باید انجام شود.</p>
+    </div>
+  </section>
+
+  <section class="stage-section">
     <h2>آیتم‌هایی که فعلاً رد کردم — باید برگردم</h2>
 
     <div class="stage-item--pending">
-      <h4><span class="revisit-badge">برگردیم</span> درآمد واقعی RevenueCat به تفکیک کشور و پلن</h4>
-      <p>هنوز دیتای RevenueCat را نکشیده‌ام. لازم است قبل از جمع‌بندی نهایی این مرحله برگردم و بردارمش.</p>
-    </div>
-
-    <div class="stage-item--pending">
-      <h4><span class="revisit-badge">برگردیم</span> مقایسه‌ی عدد RevenueCat با Amplitude</h4>
-      <p>وابسته به آیتم بالاست. اگر اختلاف زیاد باشد یعنی رویداد خرید ناقص است و باید قبل از هر تحلیل دیگری درست شود.</p>
+      <h4><span class="revisit-badge">برگردیم</span> درآمد RevenueCat به تفکیک کشور و پلن</h4>
+      <p><code>rc_initial_purchase_event</code> پراپرتی کشور ندارد (مقدار آن همیشه <code>(none)</code> است) — احتمالاً چون این رویداد سرور-به-سرور از RevenueCat می‌آید و بدون شناسه‌ی جغرافیایی کاربر ثبت می‌شود. برای تفکیک کشور × پلن باید مستقیم داشبورد RevenueCat را باز کنم یا این پراپرتی را در پایپ‌لاین اضافه کنم.</p>
     </div>
   </section>
 
