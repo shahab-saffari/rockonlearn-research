@@ -201,6 +201,11 @@
       <h4><span class="revisit-badge">برگردیم</span> درآمد RevenueCat به تفکیک کشور و پلن</h4>
       <p><code>rc_initial_purchase_event</code> پراپرتی کشور ندارد (مقدار آن همیشه <code>(none)</code> است) — احتمالاً چون این رویداد سرور-به-سرور از RevenueCat می‌آید و بدون شناسه‌ی جغرافیایی کاربر ثبت می‌شود. برای تفکیک کشور × پلن باید مستقیم داشبورد RevenueCat را باز کنم یا این پراپرتی را در پایپ‌لاین اضافه کنم.</p>
     </div>
+
+    <div class="stage-item--pending">
+      <h4><span class="revisit-badge">برگردیم</span> فیلد متن آزاد در exit survey + ثبت کد خطای پرداخت</h4>
+      <p>افزودن فیلد متن آزاد اختیاری به گزینه‌ی «سایر» در exit survey پی‌وال (رویداد <code>paywall_exit_survey_completed</code>، پراپرتی جدید <code>exit_reason_text</code>) و ثبت کد خطای پرداخت / علت کنسل شدن چک‌اوت — برای تفکیک «اعتراض به قیمت»، «منصرف شدن» و «خطای فنی». هنوز کاری روی این انجام نشده.</p>
+    </div>
   </section>
 
 </main>
