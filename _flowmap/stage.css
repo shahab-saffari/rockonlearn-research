@@ -185,3 +185,45 @@
 }
 
 .stage-note a { color: #777; }
+
+/* tl;dr summary block */
+.stage-tldr {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 18px 20px;
+  margin-bottom: 36px;
+}
+
+.stage-tldr h2 {
+  font-size: 14px;
+  margin: 0 0 12px;
+  color: #444;
+}
+
+.stage-tldr ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.stage-tldr li {
+  font-size: 13.5px;
+  line-height: 1.9;
+  color: #333;
+  padding: 8px 0;
+  border-top: 1px dashed #eee;
+}
+
+.stage-tldr li:first-child { border-top: none; padding-top: 0; }
+
+.stage-tldr .arrow {
+  color: #999;
+  font-weight: 700;
+  margin: 0 4px;
+}
+
+.stage-tldr .result {
+  color: #3d6b40;
+  font-weight: 600;
+}
