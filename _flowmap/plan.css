@@ -26,6 +26,13 @@ main.plan section {
 
 .plan-note a { color: #555; }
 
+.plan-lead {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.9;
+  margin: 0 0 18px;
+}
+
 /* ---- intro findings ---- */
 .finding-grid {
   display: grid;
