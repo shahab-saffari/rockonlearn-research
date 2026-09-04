@@ -1,0 +1,141 @@
+/* stage-N.html — documentation pages for each plan stage, extends plan.css */
+
+.stage-doc {
+  max-width: 860px;
+}
+
+.stage-empty {
+  background: #fff;
+  border: 1px dashed #ddd;
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+}
+
+.stage-section {
+  margin-bottom: 36px;
+}
+
+.stage-section h2 {
+  font-size: 16px;
+  margin: 0 0 14px;
+  color: #222;
+}
+
+.stage-section p {
+  font-size: 14px;
+  line-height: 1.9;
+  color: #333;
+  margin: 0 0 10px;
+}
+
+.stage-section ul,
+.stage-section ol {
+  margin: 0 0 10px;
+  padding-right: 20px;
+  font-size: 14px;
+  line-height: 1.9;
+  color: #333;
+}
+
+.stage-section li { margin-bottom: 6px; }
+
+.stage-section code {
+  background: #f3f3f3;
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-size: 12.5px;
+  direction: ltr;
+  display: inline-block;
+}
+
+/* image gallery */
+.stage-shots {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.stage-shot {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.stage-shot img {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+.stage-shot .cap {
+  padding: 8px 10px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* data table used inside stage docs */
+.stage-table-wrap {
+  overflow-x: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.stage-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  background: #fff;
+}
+
+.stage-table th,
+.stage-table td {
+  padding: 10px 14px;
+  text-align: right;
+  border-bottom: 1px solid #eee;
+  vertical-align: top;
+}
+
+.stage-table th {
+  background: #fafafa;
+  font-size: 12px;
+  color: #888;
+  font-weight: 600;
+}
+
+.stage-table tr:last-child td { border-bottom: none; }
+
+/* finding / conclusion callout */
+.stage-callout {
+  background: #f9faf7;
+  border: 1px solid #e6ece2;
+  border-radius: 8px;
+  padding: 16px 18px;
+}
+
+.stage-callout h4 {
+  font-size: 13px;
+  color: #6a8a5f;
+  margin: 0 0 8px;
+}
+
+/* status badge in header */
+.stage-status {
+  display: inline-block;
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: #fbf2df;
+  color: #97721f;
+  margin-top: 6px;
+}
+
+.stage-status--done {
+  background: #e8f2e9;
+  color: #3d6b40;
+}

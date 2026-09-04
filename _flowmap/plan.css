@@ -311,6 +311,24 @@ main.plan section {
   margin-top: 4px;
 }
 
+.day-doc-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 18px;
+  padding: 9px 16px;
+  background: #222;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.day-doc-link:hover {
+  background: #444;
+}
+
 /* ---- skip list ---- */
 .skip-list {
   margin: 0;
