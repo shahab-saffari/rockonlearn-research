@@ -139,3 +139,41 @@
   background: #e8f2e9;
   color: #3d6b40;
 }
+
+/* revisit badge for skipped items */
+.revisit-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: #fdeaea;
+  color: #a13f3f;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.stage-item--pending {
+  background: #fffaf7;
+  border: 1px dashed #eecfc2;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+}
+
+.stage-item--pending h4 {
+  font-size: 13.5px;
+  color: #444;
+  margin: 0 0 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stage-item--pending p {
+  font-size: 13px;
+  color: #888;
+  margin: 0;
+}
